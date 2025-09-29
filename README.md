@@ -1,3 +1,4 @@
+````markdown
 # CustomArrayList
 
 A simple **generic dynamic array** implementation in Java, similar to Java's `ArrayList<T>`.
@@ -19,9 +20,30 @@ A simple **generic dynamic array** implementation in Java, similar to Java's `Ar
 
 ---
 
-## Usage Example
+## Getting Started
 
-```java
+### Clone the repository
+git clone https://github.com/TEJAYERR/Custom_ArrayList.git
+cd CustomArrayList
+````
+
+### Setup and Usage
+
+1. Create a folder named `Generics` in your project.
+2. Copy `CustomArrayList.java` into the `Generics` folder.
+3. Compile the file:
+
+```
+javac Generics/CustomArrayList.java
+```
+
+* This will generate the `.class` file in the same folder.
+
+4. Now you can **import and use** `CustomArrayList` in any other folder or class:
+
+```
+import Generics.CustomArrayList;
+
 public class Main {
     public static void main(String[] args) {
         CustomArrayList<Integer> list = new CustomArrayList<>();
@@ -43,7 +65,7 @@ public class Main {
         System.out.println(val);     // 10
     }
 }
-````
+```
 
 ---
 
@@ -51,11 +73,10 @@ public class Main {
 
 * Internally uses an `Object[]` array because Java does not allow creating generic arrays (`T[]`) directly.
 * Type safety is maintained using generics and casting with `@SuppressWarnings("unchecked")`.
+* Make sure your project is using **Java 8 or higher**.
 
 ---
 
 ## Author
 
 **Teja**
-
-
